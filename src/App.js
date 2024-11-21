@@ -49,11 +49,11 @@ function App() {
   return (
     <div className="bg-primary h-screen">
       <div className="bg-secondary h-[200px] flex justify-center items-center">
-        <img src={Logo} />
+        <img src={Logo} alt="logo" />
       </div>
 
       <div className=" flex  w-full justify-center items-center relative">
-        <div className="flex gap-[8px] h-[54px] w-[736px]  absolute top-50% ">
+        <div className="flex gap-[8px] h-[54px] w-full px-6 md:px-0 md:w-[736px]  absolute top-50% ">
           <input
             className="border-none rounded-md  w-full text-base outline-none bg-[#262626] p-4"
             placeholder="Add a new task"
@@ -64,13 +64,13 @@ function App() {
             onClick={handleSubmitButton}
           >
             create
-            <img src={plugIcon} />
+            <img src={plugIcon} alt="plugIcon" />
           </button>
         </div>
       </div>
 
       <div className="mt-[91px] w-full flex justify-center">
-        <div className="w-[736px] flex flex-col gap-6 ">
+        <div className="w-[736px] flex flex-col gap-6 mx-6">
           <div className="flex justify-between ">
             <div className="text-[#4EA8DE] flex gap-2 ">
               Created Tasks
@@ -97,7 +97,7 @@ function App() {
             ))
           ) : (
             <div className="flex gap-4  py-12  flex-col items-center border-t-[1px] border-[#333333] rounded-lg">
-              <img src={cliIcon} className="size-14" />
+              <img src={cliIcon} alt="cliIcon" className="size-14" />
               <div className="flex flex-col text-center text-[#808080]">
                 <span className="font-bold">
                   You don't have tasks registered yet
